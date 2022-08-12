@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione cumque nulla quaerat, nam perspiciatis saepe vel nostrum suscipit? Autem temporibus incidunt odit dolor ab perspiciatis inventore explicabo nemo dolores repellendus.
+Consequuntur tenetur repellendus, ullam voluptates quis praesentium dolore libero eos alias? Pariatur excepturi ipsa sunt repellendus atque similique neque officia officiis possimus. Harum aspernatur natus nobis corporis enim nulla odio.
+Molestiae, accusamus nihil. Voluptatum obcaecati soluta laboriosam tempore sunt quas voluptas, eum in est id dignissimos nulla autem velit consequatur sequi. Dicta expedita sed vel similique. Eum labore sequi laboriosam?
+Numquam, maxime. Officia earum ullam aliquam at cumque culpa quos ducimus dolore? Eius sit dolorum accusamus laborum nesciunt veniam et a, voluptatum maxime saepe corporis qui, delectus exercitationem neque totam.
+Excepturi blanditiis corrupti doloremque? Adipisci a maiores illum minus ex, molestias iste numquam ut repellendus animi obcaecati vel, sapiente nemo libero possimus in repudiandae blanditiis soluta. Nam animi maxime iure!</p>
+
+<script>
+
+
+console.dir(window.document.body.children[0]);
+let p = window.document.body.children[0].innerText;
+console.log(p); 
+console.log(p.length);
+
+// let count = 0;
+// for(let i= 0; i<p.innerText.length; i++){
+//   if(p.innerText[i] === "e"){
+//     count++;
+//   }
+// }
+// console.log(count);
+
+
+
+  let inspactData = {
+  a : 0,
+  e : 0
+  };
+
+  for(let i= 0; i<p.length; i++){
+    if(p[i] === "a"){
+    inspactData.a++
+  } else if(p[i] ==="e") (
+    inspactData.e++
+  )
+}
+console.log(inspactData);
+  
+
+
+
+
+// let p = window.document.body.children[0];
+
+// console.log(typeof(p.outerText));
+// console.log(p.outerText.length);
+// console.log(p.outerText.length[0]);
+//   let count = 0;
+//   for(let i = 0; i< p.outerText.length; i++){
+//     if(p.outerText[i] === "e"){
+//       count++;
+//     }
+//   }
+
+//   console.log(count + 'count 값은 이것입니다.');
+
+
+
+
+  // console.dir(document.body.children[0]);
+
+  // var arr = [document.body.children[0].textContent];
+  // var count = 0;
+
+  // for(let loop = 0; loop <arr.length; loop++){
+  //   if(arr[loop] ==='e'){
+  //     count++;
+  //   }
+  // }
+  
+  // console.log(`count : ${count}`);
+      
+    
+  
+  
+  // const str = 'console.log(document.body.children[0])';
+  // const arr = str.split('');
+
+  // let count = 0;
+  // for(let i=0; i<arr.length; i++){
+  //   if(arr[i] ==='e'){
+  //     count++
+  //   }
+
+  // }
+
+  // console.log(count)
+
+
+    // var str = 'document.body.children[0].textContent';
+
+    
+    
+    // var count = str.split('e').length -1;
+
+    // for(let i = 0; i< string.length; i++){
+    // if (string[i] === search ){
+    //   count++
+    //   }
+    // }
+  
+    
+
+</script>
+</body>
+</html>
