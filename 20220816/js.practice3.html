@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+    }
+
+    #root{
+      width: 100vw;
+      height: 100vh;
+      background-color: bisque;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    #root>ul{
+      width: 50vw;
+      height: 20vh;
+      background-color: cadetblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:10px;
+
+    }
+
+    li{
+      width: 10vw;
+      height: 10vh;
+      background-color: salmon;
+      margin:10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button{
+      width: 100px;
+      height: 50px;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <ul>
+      <li>피카츄</li>
+      <li>피카츄</li>
+      <li>피카츄</li>
+      <li>피카츄</li>
+      <li>피카츄</li>
+      <li>피카츄</li>
+    </ul>
+
+    <button>click me!</button>
+
+  </div>
+
+  
+
+  <script>
+  console.dir(document.body.children[0]);
+  let root = document.body.children[0];
+  
+  console.dir(document.body.children[0].children[0]);
+  let ul = document.body.children[0].children[0];
+
+  let li = document.querySelectorAll("ul>li");
+  
+  console.dir(document.body.children[0].children[1]);
+  let button = document.body.children[0].children[1];
+  console.log(button);
+
+  let click = true;
+  
+  button.addEventListener("click",function(){
+    if(click ===true){
+      // for(let i = 0; i<li.length; i++){
+
+        click = false;
+        console.log(click);
+        ul.style.width = "20vw";
+        ul.style.height = "50vh";
+        ul.style.flexDirection = "column";
+
+      // }
+    }else{
+      click = true;
+      console.log(click);
+      ul.style.width = "50vw";
+      ul.style.height = "20vh";
+      ul.style.flexDirection = "row";
+    }
+    
+  });
+
+  console.log(ul.style);
+
+  </script>
+</body>
+</html>

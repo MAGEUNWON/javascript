@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <ul>
+      <li>menus-1</li>
+      <li>menus-2</li>
+      <li>menus-3</li>
+      <li>menus-4</li>
+      <li>menus-5</li>
+    </ul>
+
+    <button id = "button">click here!</button>
+  </div>
+
+  <script>
+    // console.dir(document.body.children[0].children[0]);
+    // console.dir(document.body.children[0].children[1]);
+
+  
+    let button = (document.body.children[0].children[1]);
+    console.log(button);
+
+    // let buttonTwo = document.querySelector('button');
+    // console.log(buttonTwo);
+
+    // let buttonThree = document.getElementById("button");
+    // console.log(buttonThree);
+    // 다 button 불러오는 같은 방법 
+    
+
+    let li = document.querySelectorAll("ul>li");
+    console.log(li);
+    
+
+    button.addEventListener("click", function(){
+      for(let i=0; i<li.length; i++){
+        li[i].style.backgroundColor = "cadetblue";
+        console.log(i);
+      }
+    })
+
+
+
+  </script>
+</body>
+</html>

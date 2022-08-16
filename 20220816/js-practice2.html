@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+    }
+
+    #root{
+      width: 700px;
+      height: 150px;
+      background-color: gray;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    #root>div{
+      width: 100px;
+      height: 100px;
+      background-color: aliceblue;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <div id ="root">
+    <div>피카츄</div>
+    <div>피카츄</div>
+    <div>피카츄</div>
+    <div>피카츄</div>
+    <div>피카츄</div>
+    <div>피카츄</div>
+  </div>
+
+  <button>click me!</button>
+
+  <script>
+
+    console.dir(document.body.children[0]);
+    let root = document.body.children[0];
+  
+    console.dir(document.body.children[0].children);
+    let divs = document.body.children[0].children;
+    console.log(divs);
+    
+    let button = document.getElementsByTagName("button");
+    console.log(button);
+
+    button.addEventListener('click',function(){
+      for(let i =0; i<divs.length;i++){
+        root.style.flexDirection= "column";
+
+      }
+    })
+    
+
+
+    // if(click ===true){
+    //   click = false;
+    //   console.log(false);
+    //   root.style.width = "700px";
+    //   root.style.height = "150px";
+    //   divs.style.width ="100px";
+    //   divs.style.height = "100px";
+    //   divs.style.backgroundColor = "white";
+      
+        
+    //   }
+
+    
+
+
+
+
+
+  </script>
+</body>
+</html>

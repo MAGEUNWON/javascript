@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id = "title">hello</h1>
+
+
+  <script> 
+  
+  let title = document.getElementById("title");
+  // title에 따옴표 안쓰면 변수. "title" 따옴표 쓰면 문자열
+  console.dir(title.textContent);
+  // getting(문서의 내용을 가져옴)
+  // document.getElementById("title").textContent="bye";
+  // setting(재할당) -> 텍스트 내용을 바꿔주라고 명령
+
+  title.addEventListener("click",function(){
+    title.style.color = "pink";
+    // 클릭 이벤트가 생기면 hello 글자색을 바꿔주라고 명령
+    title.style.fontSize = "4rem";
+    title.style.textAlign = "center";
+    title.parentNode.style.backgroundColor = "gray";
+    // document.body.style.backgroundColor = "gray";
+    
+    
+    
+    // document.getElementById("title").textContent="bye";
+    // 클릭 이벤트가 생기면 hello를 bye로 바꿔주라고 명령
+  });
+  console.dir(title.clientWidth);
+  console.dir(title.clientHeight);
+  console.dir(document.body);
+  // 외우지 말고 dir로 찾아가면서 할 것
+
+  
+  
+  
+  
+  
+  </script>
+</body>
+</html>
