@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box; list-style: none;}
+
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    #drawer{
+      width: 300px;
+      height: 500px;
+      position: relative;
+    }
+
+    #front{
+      width: 300px;
+      height: 500px;
+      background-color: rgb(43, 42, 42);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backface-visibility:hidden;
+    }
+
+    #back{
+      width: 300px;
+      height: 500px;
+      background-color: darkgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backface-visibility: hidden;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id = "drawer">
+
+    <div id = "front">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div id = "back">
+
+      <div></div>
+
+      <div>
+        <ul>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+        </ul>
+
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+
+      </div>
+      
+
+      
+
+    </div>
+
+  </div>
+
+<script>
+  let body = document.body;
+  console.log(body);
+
+  let drawer = document.getElementById("drawer");
+  console.log(drawer);
+
+  let front = document.getElementById("front");
+  console.log(front);
+
+  let back = document.getElementById("back");
+  console.log(back);
+
+  front.addEventListener('click', function(){
+    
+  })
+
+</script>
+</body>
+</html>

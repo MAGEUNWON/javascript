@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #drawer{
+      width: 300px;
+      height: 500px;
+      background-color: rgb(32, 31, 31);
+      display: flex;
+      justify-content: space-between;
+      align-items:flex-start;
+    }
+
+    #drawer>div:nth-child(1){
+      width: 30px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    #drawer>div:nth-child(1)>div{
+      width: 28px;
+      height: 5px;
+      background-color: gainsboro;
+    }
+
+    #drawer>div:nth-child(2){
+      width: 300px;
+      height: 500px;
+    }
+
+    #drawer>div:nth-child(2)>div:nth-child(1){
+      width: 100px;
+      height: 500px;
+      background-color: rgb(32, 31, 31);
+    }
+
+    #drawer>div:nth-child(2)>div:nth-child(2){
+      width: 200px;
+      height: 500px;
+      background-color: grey;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id = "drawer">
+
+    <div id = "div">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div id = "div2">
+      <div></div>
+
+      <div>
+        <div></div>
+        <div></div>
+
+        <ul>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+          <li>menu</li>
+        </ul>
+      </div>
+      
+    </div>
+    
+
+
+  </div>
+
+  <script>
+
+  let body = document.body;
+  console.log(body);
+
+  console.dir(document.body.children[0]);
+  let drawer =  document.body.children[0];
+  // console.log(drawer);
+
+  let div = document.getElementById("div");
+  // console.log(div);
+
+  let div2 = document.getElementById("div2");
+  // console.log(div2);
+
+  drawer.addEventListener('click', function(){
+    body.style.backfaceVisibility = "hidden";
+    body.style.transition = "1s";
+    div.style.position = "absolute";
+    div.style.transform = "rotateY(0deg)";
+    div.style.transform = "rotateY(180deg)"
+    div2.style.transform = "rotateY(-180deg)";
+    div2.style.transform = "rotateY(0deg)";
+  })
+
+  // console.dir(div2.style);
+
+
+
+
+
+  </script>
+
+</body>
+</html>
